@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Lambency";
+  src: url("Fonts/LambencyRegular-eZLZe.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lambency-Bold";
+  src: url("Fonts/LambencyRegular-eZLZe.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2 {
+    font-family: "Lambency", serif;
+  }
+  h6{
+    font-family: "Open-Sans", sans-serif
+  }
+  :any-link {
+    text-decoration: none;
+    color: black;
+  }
+  :any-link:active {
+    color: #fa6f26;
+  }
+
+  @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #F2F5F7;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  i {
+    margin-right: 10px;
+  }
+  /*----------bootstrap-navbar-css------------*/
+
+  .hori-selector {
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #F2F5F7;
+  }
+  .hori-selector .right,
+  .hori-selector .left {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #F2F5F7;
+    bottom: 10px;
+  }
+  .hori-selector .right {
+    right: -25px;
+  }
+  .hori-selector .left {
+    left: -25px;
+  }
+  .hori-selector .right:before,
+  .hori-selector .left:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    background-color: #fa6f26;
+  }
+  .hori-selector .right:before {
+    bottom: 0;
+    right: -25px;
+  }
+  .hori-selector .left:before {
+    bottom: 0;
+    left: -25px;
+  }
+
+  .hori-selector {
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 0px;
+  }
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+  .hori-selector .right {
+    bottom: -25px;
+  }
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
+}
